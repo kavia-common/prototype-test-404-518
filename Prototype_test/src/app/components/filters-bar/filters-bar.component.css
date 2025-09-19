@@ -1,0 +1,3 @@
+.dropdown { position:absolute; width:220px; height:40px; background: var(--color-f2f4f8); border:1px solid var(--color-c1c7cd); border-radius:8px; display:flex; align-items:center; }
+.dropdown .label { margin-left:16px; color: var(--color-21272a); font-family: var(--typo-75-family); }
+.dropdown .dd-chevron { margin-left:auto; margin-right:8px; width:24px; height:24px; background: var(--color-697077); border-radius:4px; }

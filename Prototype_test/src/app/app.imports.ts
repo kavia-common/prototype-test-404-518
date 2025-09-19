@@ -1,0 +1,11 @@
+export { SidebarComponent } from './components/sidebar/sidebar.component';
+export { TopbarComponent } from './components/topbar/topbar.component';
+export { BreadcrumbsComponent } from './components/breadcrumbs/breadcrumbs.component';
+export { PageTitleComponent } from './components/page-title/page-title.component';
+export { TabsComponent } from './components/tabs/tabs.component';
+export { FiltersBarComponent } from './components/filters-bar/filters-bar.component';
+export { SearchBarComponent } from './components/search-bar/search-bar.component';
+export { PrimaryButtonComponent } from './components/primary-button/primary-button.component';
+export { TableHeaderComponent } from './components/table-header/table-header.component';
+export { DataRowComponent } from './components/data-row/data-row.component';
+export { BackButtonFloatingComponent } from './components/back-button-floating/back-button-floating.component';

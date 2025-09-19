@@ -1,0 +1,32 @@
+:root{
+  --color-ffffff:#ffffff;
+  --color-dde1e6:#dde1e6;
+  --color-4d5358:#4d5358;
+  --color-697077:#697077;
+  --color-f2f4f8:#f2f4f8;
+  --color-c1c7cd:#c1c7cd;
+  --color-0f62fe:#0f62fe;
+  --color-21272a:#21272a;
+  --color-cccccd:#cccccd;
+  --color-dbdbdb:#dbdbdb;
+  --color-8f9297:#8f9297;
+  --color-e0e2e6:#e0e2e6;
+  --color-121619:#121619;
+  --color-0c69b0:#0c69b0;
+  --color-212529:#212529;
+  --color-000000:#000000;
+  --color-bbbbbb:#bbbbbb;
+  --color-eceaea:#eceaea;
+  --color-d9d9d9:#d9d9d9;
+
+  --typo-62-family:"Roboto", Arial, sans-serif;
+  --typo-63-family:"Roboto", Arial, sans-serif;
+  --typo-68-family:"Roboto", Arial, sans-serif;
+  --typo-70-family:"Roboto", Arial, sans-serif;
+  --typo-71-family:"Roboto", Arial, sans-serif;
+  --typo-72-family:"Roboto", Arial, sans-serif;
+  --typo-73-family:"Roboto", Arial, sans-serif;
+  --typo-90-family:"Roboto", Arial, sans-serif;
+
+  --focus-outline: 2px solid #2b8a3e;
+}

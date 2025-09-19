@@ -1,0 +1,6 @@
+{
+  "apps": [
+    { "root": "src", "outDir": "dist/app", "assets": ["src/favicon.ico", "src/assets"], "index": "src/index.html", "main": "src/main.ts" }
+  ],
+  "defaults": {}
+}

@@ -1,0 +1,4 @@
+.data { position:absolute; left:0; top:0; }
+.text { position:absolute; color: var(--color-121619); font-family: var(--typo-63-family); font-size:14px; }
+.action { position:absolute; width:18px; height:18px; border:1.5px solid var(--color-1e1e1e, #1e1e1e); border-radius:4px; }
+.action.del { border-color: var(--color-1d1b20, #1d1b20); }

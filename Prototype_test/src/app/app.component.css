@@ -1,0 +1,16 @@
+.screen-root {
+  position: relative;
+  width: 1920px;
+  height: 1080px;
+  overflow: hidden;
+  background: var(--color-ffffff);
+  font-family: var(--typo-63-family);
+}
+.main-frame {
+  position: absolute;
+  left: 220px;
+  top: 0;
+  width: 1700px;
+  height: 1080px;
+  background: var(--color-f2f4f8);
+}

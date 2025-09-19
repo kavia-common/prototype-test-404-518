@@ -1,0 +1,12 @@
+<app-breadcrumbs></app-breadcrumbs>
+<app-page-title title="Config Server"></app-page-title>
+
+<app-tabs></app-tabs>
+<app-filters-bar></app-filters-bar>
+<app-search-bar></app-search-bar>
+<app-primary-button label="Add Profile" [left]="1546" [top]="158"></app-primary-button>
+
+<app-table-header></app-table-header>
+<ng-container *ngFor="let it of items">
+  <app-data-row [item]="it"></app-data-row>
+</ng-container>

@@ -1,0 +1,11 @@
+.header { position:absolute; left:0; top:223px; width:1000px; height:48px; background: var(--color-bbbbbb); border:1px solid var(--color-dde1e6); }
+.cell { position:absolute; top:0; height:48px; display:flex; align-items:center; }
+.title { margin-left:12px; color: var(--color-121619); font-family: var(--typo-73-family); font-size:14px; }
+.f-icon { margin-left:8px; width:16px; height:16px; border:2px solid var(--color-21272a); border-radius:4px; }
+.rowbg { position:absolute; left:24px; top:271px; width:921px; height:75px; background: var(--color-eceaea); }
+.drow { position:absolute; left:0; top:0; }
+.dcell { position:absolute; top:296px; color: var(--color-121619); font-family: var(--typo-63-family); font-size:14px; }
+.em { color: #ff2424; }
+.acts { position:absolute; top:306px; display:flex; gap:20px; }
+.icon { width:18px; height:18px; border:1.5px solid var(--color-1e1e1e, #1e1e1e); border-radius:4px; }
+.icon.del { border-color: var(--color-1d1b20, #1d1b20); }
