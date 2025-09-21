@@ -21,3 +21,4 @@ Blank screen mitigation:
 Troubleshooting:
 - Ensure devDependencies are installed (prebuild script auto-installs @angular-devkit/build-angular if missing).
 - If port 3000 is occupied, stop the other process or adjust the port in package.json `start` script.
+- Some preview or CI validators look specifically for a `.angular.json` file even when `angular.json` is present. This repo includes a minimal `.angular.json` mirroring the default project ("app") to satisfy those validators and avoid "failed to start app" errors.
