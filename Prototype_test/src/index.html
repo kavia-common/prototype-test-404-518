@@ -6,8 +6,75 @@
     <base href="/" />
     <meta name="viewport" content="width=1920, initial-scale=1" />
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <style>
+      /* Minimal inline styles to ensure something visible appears immediately */
+      #preview-placeholder {
+        position: fixed;
+        inset: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        color: #222;
+        background: #fff;
+        z-index: 1;
+      }
+      #preview-placeholder .badge {
+        padding: 10px 14px;
+        border: 1px solid #c1c7cd;
+        border-radius: 8px;
+        background: #f2f4f8;
+      }
+      /* Error banner container that can be toggled by scripts */
+      #preview-error {
+        position: fixed;
+        left: 8px;
+        right: 8px;
+        bottom: 8px;
+        padding: 10px 14px;
+        border-radius: 8px;
+        background: #ffe6e6;
+        color: #8a1f1f;
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        border: 1px solid #ffb3b3;
+        display: none;
+        z-index: 9999;
+        white-space: pre-wrap;
+      }
+    </style>
   </head>
   <body>
+    <!-- Immediate visual placeholder to avoid blank screen perception -->
+    <div id="preview-placeholder" role="status" aria-live="polite">
+      <div class="badge">Loading Prototype_test (Angular) …</div>
+    </div>
+
+    <!-- Error banner (populated by main.ts on error) -->
+    <div id="preview-error" role="alert" aria-live="assertive"></div>
+
     <app-root></app-root>
+
+    <script>
+      // Hide the placeholder once Angular attaches content (observer fallback)
+      (function () {
+        const ph = document.getElementById('preview-placeholder');
+        if (!ph) return;
+        const root = document.querySelector('app-root');
+        const hide = () => { ph.style.display = 'none'; };
+        const timeout = setTimeout(hide, 3000); // fallback hide after 3s
+        const obs = new MutationObserver(() => {
+          if (root && root.children && root.children.length > 0) {
+            hide();
+            obs.disconnect();
+            clearTimeout(timeout);
+          }
+        });
+        if (root) {
+          obs.observe(root, { childList: true, subtree: true });
+        }
+      })();
+    </script>
   </body>
 </html>

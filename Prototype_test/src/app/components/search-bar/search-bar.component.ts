@@ -8,4 +8,14 @@ import { Component, EventEmitter, Output } from '@angular/core';
 })
 export class SearchBarComponent {
   @Output() search = new EventEmitter<string>();
+
+  // PUBLIC_INTERFACE
+  /**
+   * Emits current text value when the user types into the search input.
+   * Accepts the native input event and extracts target.value safely.
+   */
+  onInput(ev: Event): void {
+    const target = ev.target as HTMLInputElement | null;
+    this.search.emit(target?.value ?? '');
+  }
 }

@@ -1,4 +1,10 @@
 <div class="search" role="search" aria-label="Search">
   <span class="icon" aria-hidden="true"></span>
-  <input class="input" type="text" placeholder="Search for" aria-label="Search for" (input)="search.emit(($event.target as HTMLInputElement).value)" />
+  <input
+    class="input"
+    type="text"
+    placeholder="Search for"
+    aria-label="Search for"
+    (input)="onInput($event)"
+  />
 </div>
