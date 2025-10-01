@@ -1,5 +1,9 @@
 <nav class="breadcrumbs" aria-label="Breadcrumb">
   <span class="crumb">{{ trail[0] }}</span>
-  <span class="chev" aria-hidden="true"></span>
+  <span class="chev" aria-hidden="true" title="separator">
+    <svg width="16" height="16" viewBox="0 0 24 24" focusable="false" aria-hidden="true">
+      <path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+    </svg>
+  </span>
   <span class="crumb">{{ trail[1] }}</span>
 </nav>

@@ -1,37 +1,79 @@
 <aside class="sidebar" role="navigation" aria-label="Sidebar">
   <div class="logo">
-    <span class="logo-icon" aria-hidden="true"></span>
+    <!-- Logo mark -->
+    <span class="logo-icon" aria-hidden="true">
+      <svg width="24" height="24" viewBox="0 0 24 24" focusable="false" aria-hidden="true">
+        <rect x="2" y="2" width="20" height="20" rx="4" fill="currentColor"></rect>
+      </svg>
+    </span>
     <span class="logo-text">Company</span>
   </div>
   <div class="divider" aria-hidden="true"></div>
 
   <nav class="menu" aria-label="Main Menu">
     <a class="menu-item" routerLink="/" aria-label="Dashboard">
-      <span class="icon" aria-hidden="true"></span>
+      <span class="icon" aria-hidden="true">
+        <!-- Dashboard icon -->
+        <svg width="24" height="24" viewBox="0 0 24 24" focusable="false" aria-hidden="true">
+          <path d="M3 3h8v8H3V3zm10 0h8v5h-8V3zM3 13h5v8H3v-8zm7 0h11v8H10v-8z" fill="currentColor"></path>
+        </svg>
+      </span>
       <span class="label">Dashboard</span>
     </a>
     <a class="menu-item" routerLink="/" aria-label="Devices">
-      <span class="icon" aria-hidden="true"></span>
+      <span class="icon" aria-hidden="true">
+        <!-- Devices icon -->
+        <svg width="24" height="24" viewBox="0 0 24 24" focusable="false" aria-hidden="true">
+          <path d="M3 6h18v9H3V6zm0 11h10v2H3v-2zm12 0h6v2h-6v-2z" fill="currentColor"></path>
+        </svg>
+      </span>
       <span class="label">Devices</span>
     </a>
     <a class="menu-item" routerLink="/" aria-label="Analytics">
-      <span class="icon" aria-hidden="true"></span>
+      <span class="icon" aria-hidden="true">
+        <!-- Analytics icon -->
+        <svg width="24" height="24" viewBox="0 0 24 24" focusable="false" aria-hidden="true">
+          <path d="M3 3h2v18H3V3zm4 10h2v8H7v-8zm4-6h2v14h-2V7zm4 4h2v10h-2V11zm4-8h2v18h-2V3z" fill="currentColor"></path>
+        </svg>
+      </span>
       <span class="label">Analytics</span>
     </a>
     <a class="menu-item" routerLink="/config" aria-label="Firmware and Apps">
-      <span class="icon" aria-hidden="true"></span>
+      <span class="icon" aria-hidden="true">
+        <!-- Apps icon -->
+        <svg width="24" height="24" viewBox="0 0 24 24" focusable="false" aria-hidden="true">
+          <path d="M3 3h8v8H3V3zm10 0h8v8h-8V3zM3 13h8v8H3v-8zm10 0h8v8h-8v-8z" fill="currentColor"></path>
+        </svg>
+      </span>
       <span class="label">Firmware and Apps</span>
     </a>
     <a class="menu-item" routerLink="/" aria-label="Users">
-      <span class="icon" aria-hidden="true"></span>
+      <span class="icon" aria-hidden="true">
+        <!-- Users icon -->
+        <svg width="24" height="24" viewBox="0 0 24 24" focusable="false" aria-hidden="true">
+          <path d="M12 12c2.8 0 5-2.24 5-5s-2.2-5-5-5-5 2.24-5 5 2.2 5 5 5zm0 2c-4 0-8 2.02-8 5v3h16v-3c0-2.98-4-5-8-5z" fill="currentColor"></path>
+        </svg>
+      </span>
       <span class="label">Users</span>
     </a>
 
-    <div class="menu-item more" role="button" tabindex="0" aria-label="More">
-      <span class="icon" aria-hidden="true"></span>
+    <div class="menu-item more" role="button" tabindex="0" aria-label="More options">
+      <span class="icon" aria-hidden="true">
+        <!-- More/apps icon -->
+        <svg width="24" height="24" viewBox="0 0 24 24" focusable="false" aria-hidden="true">
+          <circle cx="5" cy="12" r="2" fill="currentColor"></circle>
+          <circle cx="12" cy="12" r="2" fill="currentColor"></circle>
+          <circle cx="19" cy="12" r="2" fill="currentColor"></circle>
+        </svg>
+      </span>
       <span class="label">More</span>
       <span class="badge" aria-label="4 notifications">4</span>
-      <span class="chevron" aria-hidden="true"></span>
+      <span class="chevron" aria-hidden="true" title="Open">
+        <!-- Chevron-right -->
+        <svg width="24" height="24" viewBox="0 0 24 24" focusable="false" aria-hidden="true">
+          <path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg>
+      </span>
     </div>
 
     <a class="menu-item config" routerLink="/config" aria-label="Config Server">

@@ -1,8 +1,16 @@
 <div class="tab" [class.selected]="active==='profile'" role="tab" [attr.aria-selected]="active==='profile'" tabindex="0" (click)="select('profile')" style="position:absolute;left:24px;top:158px;">
-  <span class="icon" aria-hidden="true"></span>
+  <span class="icon" aria-hidden="true" title="Profile">
+    <svg width="24" height="24" viewBox="0 0 24 24" focusable="false" aria-hidden="true">
+      <path d="M12 12c2.8 0 5-2.24 5-5s-2.2-5-5-5-5 2.24-5 5 2.2 5 5 5zm0 2c-4 0-8 2.02-8 5v3h16v-3c0-2.98-4-5-8-5z" fill="currentColor"></path>
+    </svg>
+  </span>
   <span class="label">Profile</span>
 </div>
 <div class="tab" [class.selected]="active==='rules'" role="tab" [attr.aria-selected]="active==='rules'" tabindex="0" (click)="select('rules')" style="position:absolute;left:182px;top:158px;">
-  <span class="icon" aria-hidden="true"></span>
+  <span class="icon" aria-hidden="true" title="Rules">
+    <svg width="24" height="24" viewBox="0 0 24 24" focusable="false" aria-hidden="true">
+      <path d="M4 4h16v2H4V4zm0 5h12v2H4V9zm0 5h16v2H4v-2zm0 5h12v2H4v-2z" fill="currentColor"></path>
+    </svg>
+  </span>
   <span class="label">Rules</span>
 </div>
